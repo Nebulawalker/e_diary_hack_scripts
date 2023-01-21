@@ -1,10 +1,6 @@
 from datacenter.models import Schoolkid, Mark, Chastisement, Lesson, Commendation
 
 
-name = 'Фролов Иван'
-name_wr = 'Фролов Иваrн'
-m_name = 'Степан'
-
 def get_schoolkid(name):
     try:
         schoolkid = Schoolkid.objects.get(full_name__contains=name)
